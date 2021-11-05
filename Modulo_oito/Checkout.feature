@@ -10,13 +10,13 @@ Contexto:
 
 Cenário: Cadastro com campos obrigatórios
     Quando preencho os campos obrigatórios:
-        | nome      | sobrenome      | pais_obrigatorio | endereco_rua_e_numero | cidade        | cep        | telefone      | endereco_emaol              |
+        | nome      | sobrenome      | pais_obrigatorio | endereco_rua_e_numero | cidade        | cep        | telefone      | endereco_email              |
         | "Gabriel" | "Zago Cecchin" | "Brasil"         | "Avenida Brasil 89"   | "Passo Fundo" | "99910035" | "11999118877" | "gabrielzcecchin@gmail.com" |
     Então cadastro é concluído com sucesso
 
 Cenário: Cadastro com campos obrigatórios e opcionais
     Quando preencho os campos obrigatórios:
-        | nome      | sobrenome      | nome_empresa | pais_obrigatorio | endereco_rua_e_numero | endereco_opcional | cidade        | pais_opcional | cep        | telefone      | endereco_emaol              |
+        | nome      | sobrenome      | nome_empresa | pais_obrigatorio | endereco_rua_e_numero | endereco_opcional | cidade        | pais_opcional | cep        | telefone      | endereco_email              |
         | "Gabriel" | "Zago Cecchin" | "EBAC"       |"Brasil"          | "Avenida Brasil 89"   | "Apartamento 85"  | "Passo Fundo" | "Brasil"      | "99910035" | "11999118877" | "gabrielzcecchin@gmail.com" |
     Então cadastro é concluído com sucesso
 
@@ -36,7 +36,7 @@ Esquema do Cenário: Não permitir cadastro com e-mail no formato inválido
 
 Esquema do Cenário: Não permitir cadastro com campos obrigatórios vazios
     Quando preencho os campos obrigatórios:
-        | nome      | sobrenome      | pais_obrigatorio | endereco_rua_e_numero | cidade        | cep        | telefone      | endereco_emaol              |
+        | nome      | sobrenome      | pais_obrigatorio | endereco_rua_e_numero | cidade        | cep        | telefone      | endereco_email              |
         | ""        | "Zago Cecchin" | "Brasil"         | "Avenida Brasil 89"   | "Passo Fundo" | "99910035" | "11999118877" | "gabrielzcecchin@gmail.com" |
         | "Gabriel" | ""             | "Brasil"         | "Avenida Brasil 89"   | "Passo Fundo" | "99910035" | "11999118877" | "gabrielzcecchin@gmail.com" |
         | "Gabriel" | "Zago Cecchin" | "Brasil"         | ""                    | "Passo Fundo" | "99910035" | "11999118877" | "gabrielzcecchin@gmail.com" |
